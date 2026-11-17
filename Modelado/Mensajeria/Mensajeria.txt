@@ -1,0 +1,30 @@
+EMPRESA DE MENSAJERÍA
+=====================
+
+Una empresa de mensajería con sedes en tres ciudades necesita que sus clientes
+puedan rastrear cada guía.
+
+- Cada SEDE tiene un código, ciudad, dirección y teléfono. Los MENSAJEROS
+  (código, nombre, licencia única y tipo de vehículo: moto, bicicleta o
+  furgón) trabajan en una sede, y en cada sede hay por lo menos uno.
+- Los CLIENTES corporativos se identifican con su NIT y tienen razón social,
+  teléfono y un correo opcional.
+- Cada ENVÍO tiene un número de guía, fecha de recepción, peso, valor
+  declarado, costo, destinatario, dirección y ciudad de destino. Lo envía un
+  cliente y se recibe en una sede.
+- Un envío se le asigna a un mensajero para recogerlo o repartirlo, y se
+  guarda la fecha de asignación. Un envío recién recibido puede no tener
+  mensajero todavía, y un mensajero puede no tener envíos asignados.
+- Cada envío tiene su SEGUIMIENTO: eventos numerados 1, 2, 3… dentro de la
+  guía, con fecha y hora, estado (recibido, en tránsito, en reparto, novedad,
+  entregado o devuelto) y una observación opcional. El número del evento solo
+  no identifica nada sin la guía.
+- Los envíos son paquetes (alto, ancho, largo y si es frágil) o documentos
+  (número de folios y si es correo certificado).
+
+Entidades del enunciado: Sede, Mensajero, Envío, Seguimiento.
+Entidades agregadas para completar el problema: Cliente.
+
+Se pide: modelo entidad-relacion (MER) y extendido (MER-E) en notacion de
+Peter Chen y pata de gallina, reduccion a tablas, modelo relacional,
+normalizacion hasta FNBC e implementacion en SQL.

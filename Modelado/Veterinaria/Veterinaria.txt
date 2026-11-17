@@ -1,0 +1,30 @@
+CLÍNICA VETERINARIA
+===================
+
+Una clínica veterinaria de barrio lleva las historias clínicas en carpetas de
+papel y quiere pasarlas a una base de datos.
+
+- De cada DUEÑO se guarda la cédula, el nombre (nombres y apellidos), la
+  dirección, un correo opcional y uno o varios teléfonos. Un dueño se registra
+  cuando trae su primera mascota.
+- Cada MASCOTA se numera dentro de su dueño (la mascota 1, la 2…): el número
+  solo no la identifica, hace falta saber de quién es. Se guarda nombre,
+  especie, raza (opcional) y fecha de nacimiento; la edad se calcula.
+- Cada VETERINARIO tiene un código interno, nombre, número de tarjeta
+  profesional (único) y especialidad.
+- En cada CONSULTA se registra la fecha, el motivo, el diagnóstico (puede
+  quedar pendiente) y el valor cobrado. Una consulta es de una sola mascota y
+  la atiende un solo veterinario.
+- En una consulta se pueden recetar varios MEDICAMENTOS del catálogo (código,
+  nombre, presentación y precio); por cada uno se anota la dosis y los días de
+  tratamiento.
+- Algunas consultas son urgencias (se guarda el nivel de triage, de 1 a 5) y
+  otras son controles de un tratamiento (se guarda la fecha del próximo
+  control). Las demás son consultas generales.
+
+Entidades del enunciado: Dueño, Mascota, Veterinario.
+Entidades agregadas para completar el problema: Consulta, Medicamento.
+
+Se pide: modelo entidad-relacion (MER) y extendido (MER-E) en notacion de
+Peter Chen y pata de gallina, reduccion a tablas, modelo relacional,
+normalizacion hasta FNBC e implementacion en SQL.

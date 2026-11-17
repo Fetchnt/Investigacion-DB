@@ -1,0 +1,27 @@
+PLATAFORMA DE CURSOS EN LÍNEA
+=============================
+
+Una plataforma de cursos virtuales quiere guardar quién enseña, quién aprende
+y cómo avanza cada estudiante.
+
+- Las personas se registran con un código, correo único, nombre, fecha de
+  registro y país. Pueden ser estudiantes (se guarda su nivel educativo),
+  instructores (profesión y una biografía corta) o las dos cosas: un
+  instructor también puede tomar cursos.
+- Cada CURSO tiene un código, título, nivel (básico, intermedio o avanzado),
+  precio, fecha de publicación y uno o varios idiomas. El número de inscritos
+  se calcula.
+- Cada curso lo dicta un solo instructor y pertenece a una CATEGORÍA
+  (programación, bases de datos, diseño…).
+- Todo curso tiene exactamente un FORO de discusión, y cada foro es de un solo
+  curso. Del foro se guarda su nombre y si está moderado.
+- Un estudiante se inscribe en cursos. De cada inscripción se guarda la fecha,
+  el porcentaje de avance y la calificación final (de 0 a 5), que solo existe
+  cuando el avance llega al 100 %.
+
+Entidades del enunciado: Estudiante, Instructor, Curso, Categoría.
+Entidades agregadas para completar el problema: Foro.
+
+Se pide: modelo entidad-relacion (MER) y extendido (MER-E) en notacion de
+Peter Chen y pata de gallina, reduccion a tablas, modelo relacional,
+normalizacion hasta FNBC e implementacion en SQL.

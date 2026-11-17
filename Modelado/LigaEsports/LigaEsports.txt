@@ -1,0 +1,30 @@
+LIGA DE E-SPORTS
+================
+
+Una liga latinoamericana de deportes electrónicos organiza torneos de un
+videojuego por equipos y quiere llevar inscripciones, partidas y estadísticas.
+
+- Cada EQUIPO tiene un código, nombre único, país y fecha de fundación; su
+  antigüedad se calcula.
+- Los integrantes de un equipo son jugadores (nickname único y rol en el
+  juego) o entrenadores (años de experiencia). De todos se guarda nombre
+  (nombres y apellidos) y fecha de nacimiento, y la edad se calcula. Cada
+  integrante pertenece a un solo equipo; un equipo puede tener varios
+  entrenadores (uno por torneo, por ejemplo).
+- Cada TORNEO tiene código, nombre, videojuego, fecha de inicio y premio.
+- Para jugar un torneo, el equipo se inscribe a través de uno de sus
+  entrenadores, que queda como responsable ante la liga. Un equipo inscribe un
+  solo entrenador por torneo, y un entrenador solo puede inscribir a su
+  equipo. Se guarda la fecha de inscripción.
+- Cada PARTIDA pertenece a un torneo y la juegan dos equipos: uno como local y
+  otro como visitante. Se guarda la fecha, la ronda (grupos, cuartos,
+  semifinal o final), la duración y los puntos de cada lado; el ganador se
+  calcula.
+- Por cada jugador y partida se registran sus estadísticas: kills, muertes y
+  asistencias. El KDA se calcula como (kills + asistencias) / muertes.
+
+Entidades del enunciado: Equipo, Jugador, Entrenador, Torneo, Partida.
+
+Se pide: modelo entidad-relacion (MER) y extendido (MER-E) en notacion de
+Peter Chen y pata de gallina, reduccion a tablas, modelo relacional,
+normalizacion hasta FNBC e implementacion en SQL.

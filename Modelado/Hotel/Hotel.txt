@@ -1,0 +1,30 @@
+CADENA HOTELERA
+===============
+
+Una pequeña cadena con hoteles en tres ciudades quiere centralizar sus
+reservas.
+
+- Cada HOTEL se identifica con su NIT y tiene nombre, ciudad, dirección y
+  categoría en estrellas.
+- Cada HABITACIÓN pertenece a un hotel y tiene un número (que se puede repetir
+  entre hoteles), piso, capacidad y una tarifa base por noche.
+- Los HUÉSPEDES se registran con su documento, nombre (nombres y apellidos),
+  correo único y país.
+- Un huésped hace RESERVAS. Cada reserva tiene un código, la fecha en que se
+  hizo, la fecha de entrada, la de salida y un estado (confirmada, activa,
+  finalizada o cancelada). El número de noches se calcula.
+- Una reserva puede incluir varias habitaciones, aun de distinto tipo, y por
+  cada una se pacta una tarifa por noche que puede ser distinta de la tarifa
+  base.
+- Durante la estadía se cargan SERVICIOS (desayuno, spa, lavandería…). Un
+  mismo servicio se puede consumir varios días en la misma reserva, y cada vez
+  se anota la fecha y la cantidad.
+- Las habitaciones son suites (se guardan los metros cuadrados y si tienen
+  jacuzzi) o estándar (se guarda el tipo de cama).
+
+Entidades del enunciado: Hotel, Habitación, Huésped, Reserva.
+Entidades agregadas para completar el problema: Servicio.
+
+Se pide: modelo entidad-relacion (MER) y extendido (MER-E) en notacion de
+Peter Chen y pata de gallina, reduccion a tablas, modelo relacional,
+normalizacion hasta FNBC e implementacion en SQL.

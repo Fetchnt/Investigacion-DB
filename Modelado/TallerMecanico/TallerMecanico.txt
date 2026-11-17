@@ -1,0 +1,30 @@
+TALLER MECÁNICO
+===============
+
+Un taller mecánico quiere dejar de llevar las órdenes de trabajo en un tablero
+de corcho.
+
+- De cada CLIENTE se guarda documento, nombre, teléfono y correo (opcional).
+  Un cliente puede tener varios VEHÍCULOS; de cada uno se guarda placa, marca,
+  línea, modelo (año) y color.
+- Cada vez que un vehículo entra se abre una ORDEN DE TRABAJO con número,
+  fecha de ingreso, kilometraje, estado (recibida, en proceso o entregada) y
+  la fecha de entrega cuando se entrega. El total de la orden se calcula.
+- Los EMPLEADOS tienen código, nombre (nombres y apellidos), fecha de ingreso
+  y salario. Son mecánicos (especialidad y nivel: junior, senior o jefe) o
+  asesores de servicio (extensión telefónica y meta mensual de ventas).
+- Cada orden la recibe un asesor. En una orden trabajan cero o varios
+  mecánicos (cero mientras no se asigne) y por cada uno se anotan las horas y
+  la labor.
+- Un mecánico puede supervisar a otros mecánicos; cada mecánico tiene como
+  máximo un supervisor, y el jefe de taller no tiene ninguno.
+- En una orden se usan REPUESTOS del almacén (código, nombre, precio de lista
+  y existencias). Por cada repuesto se anota la cantidad y el valor al que se
+  cobró, porque el precio de lista cambia.
+
+Entidades del enunciado: Cliente, Vehículo, Orden de trabajo, Empleado.
+Entidades agregadas para completar el problema: Repuesto.
+
+Se pide: modelo entidad-relacion (MER) y extendido (MER-E) en notacion de
+Peter Chen y pata de gallina, reduccion a tablas, modelo relacional,
+normalizacion hasta FNBC e implementacion en SQL.

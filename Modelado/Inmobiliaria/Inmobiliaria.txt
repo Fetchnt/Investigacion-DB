@@ -1,0 +1,30 @@
+AGENCIA INMOBILIARIA
+====================
+
+Una agencia inmobiliaria administra inmuebles de varios propietarios y
+programa visitas con clientes interesados.
+
+- Cada PROPIETARIO tiene documento, nombre, correo opcional y uno o varios
+  teléfonos.
+- Cada INMUEBLE se identifica con su folio de matrícula inmobiliaria y tiene
+  dirección (calle, número y barrio), ciudad, tipo (apartamento, casa, local u
+  oficina), área, estrato y número de habitaciones. Es de un solo propietario
+  y lo gestiona un solo AGENTE (código, nombre y teléfono).
+- Un inmueble puede ofrecerse en venta (precio y si se acepta permuta), en
+  arriendo (canon mensual y depósito, que no puede pasar de dos cánones), en
+  las dos modalidades a la vez o en ninguna, mientras el dueño lo retira del
+  mercado.
+- Los CLIENTES se registran con documento, nombre, teléfono y presupuesto. Un
+  cliente puede visitar varios inmuebles y volver al mismo otro día; de cada
+  visita se guarda fecha, hora, nivel de interés (1 a 5) y un comentario
+  opcional.
+- La comisión del agente depende del precio de venta: hay una tabla de rangos
+  (de 0 a 300 millones el 4 %, hasta 800 millones el 3 %, por encima el 2,5
+  %).
+
+Entidades del enunciado: Propietario, Inmueble, Agente, Cliente.
+Entidades agregadas para completar el problema: Rango de comisión.
+
+Se pide: modelo entidad-relacion (MER) y extendido (MER-E) en notacion de
+Peter Chen y pata de gallina, reduccion a tablas, modelo relacional,
+normalizacion hasta FNBC e implementacion en SQL.

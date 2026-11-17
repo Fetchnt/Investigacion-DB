@@ -1,0 +1,28 @@
+FESTIVAL DE MÚSICA
+==================
+
+Un festival de música de tres días necesita organizar su programación y la
+venta de boletas.
+
+- Cada ARTISTA tiene un código, nombre artístico, país de origen y uno o
+  varios géneros musicales.
+- Cada ESCENARIO tiene un código de tres letras, nombre y aforo.
+- Cada JORNADA (día del festival) tiene un número, una fecha única y su hora
+  de apertura y de cierre.
+- La programación dice qué artista se presenta en qué escenario y en qué
+  jornada, a qué hora empieza y cuánto dura. Un artista puede tocar en varias
+  jornadas, pero en una misma jornada se presenta en un solo escenario.
+- Los ASISTENTES se registran con documento, nombre, correo y fecha de
+  nacimiento (la edad se calcula para el control de ingreso).
+- Un asistente compra BOLETAS. Cada boleta tiene un código, tipo (general, VIP
+  o abono), precio y fecha de compra. La general y la VIP valen para una
+  jornada; el abono vale para todas.
+- Los artistas son solistas (se guarda su nombre real y su instrumento) o
+  agrupaciones (número de integrantes y año de formación).
+
+Entidades del enunciado: Artista, Escenario, Jornada, Boleta.
+Entidades agregadas para completar el problema: Asistente.
+
+Se pide: modelo entidad-relacion (MER) y extendido (MER-E) en notacion de
+Peter Chen y pata de gallina, reduccion a tablas, modelo relacional,
+normalizacion hasta FNBC e implementacion en SQL.

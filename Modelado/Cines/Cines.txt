@@ -1,0 +1,28 @@
+CADENA DE CINES
+===============
+
+Una cadena de cines quiere vender tiquetes con silla numerada desde su página
+web.
+
+- Cada CINE tiene un código, nombre, ciudad, una dirección (calle, número y
+  barrio) y uno o varios teléfonos.
+- Cada cine tiene varias SALAS, numeradas dentro del cine, con su capacidad.
+- De cada PELÍCULA se guarda el título, el título original (si es extranjera),
+  la duración en minutos, la clasificación (T, 7+, 12+, 15+, 18+) y la fecha
+  de estreno.
+- Una FUNCIÓN es la proyección de una película en una sala, en una fecha y
+  hora, con un precio y un idioma (doblada, subtitulada u original). En una
+  sala no puede haber dos funciones a la misma hora.
+- Los CLIENTES se registran con documento, nombre (nombres y apellidos),
+  correo único y puntos acumulados.
+- Un cliente compra tiquetes para funciones. Cada tiquete es una silla (fila y
+  número) de esa función y se guarda el valor pagado. Un cliente puede comprar
+  varias sillas para la misma función, pero una silla no se vende dos veces.
+- Algunas salas son 3D (se guarda cuántas gafas tienen) y otras VIP (si tienen
+  servicio de mesero). Las demás son regulares.
+
+Entidades del enunciado: Cine, Sala, Película, Función, Cliente.
+
+Se pide: modelo entidad-relacion (MER) y extendido (MER-E) en notacion de
+Peter Chen y pata de gallina, reduccion a tablas, modelo relacional,
+normalizacion hasta FNBC e implementacion en SQL.

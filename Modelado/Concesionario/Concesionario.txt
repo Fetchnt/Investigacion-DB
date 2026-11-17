@@ -1,0 +1,29 @@
+CONCESIONARIO DE VEHÍCULOS
+==========================
+
+Un concesionario con varias sedes vende vehículos nuevos y usados y quiere
+controlar su inventario y sus ventas.
+
+- Cada SEDE tiene un código, nombre, ciudad y dirección. En cada sede trabaja
+  por lo menos un vendedor.
+- Cada VEHÍCULO se identifica por su número VIN (17 caracteres) y tiene marca,
+  modelo, año, color y precio de lista. Está exhibido en una sede y puede
+  traer varios accesorios (sunroof, sensores, cámara…) que se escogen de un
+  catálogo.
+- Cada VENDEDOR tiene un código, nombre, porcentaje de comisión y fecha de
+  ingreso; su antigüedad se calcula. Trabaja en una sola sede.
+- Los CLIENTES se registran con documento, nombre (nombres y apellidos),
+  teléfono y correo opcional.
+- Cada VENTA tiene número de factura, fecha, valor final y forma de pago. La
+  compra un solo cliente, la hace un solo vendedor y corresponde a un solo
+  vehículo; un vehículo se vende como máximo una vez y mientras no se venda
+  está disponible.
+- Los vehículos son nuevos (se guarda la garantía en meses) o usados
+  (kilometraje, placa y número de propietarios anteriores).
+
+Entidades del enunciado: Vehículo, Cliente, Vendedor, Venta.
+Entidades agregadas para completar el problema: Sede.
+
+Se pide: modelo entidad-relacion (MER) y extendido (MER-E) en notacion de
+Peter Chen y pata de gallina, reduccion a tablas, modelo relacional,
+normalizacion hasta FNBC e implementacion en SQL.
