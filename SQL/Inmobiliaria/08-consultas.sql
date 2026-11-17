@@ -162,7 +162,7 @@ SELECT v.documento_cliente FROM VISITA v JOIN INMUEBLE i ON i.matricula = v.matr
 SELECT p.nombre, t.telefono, 'propietario' AS rol FROM PROPIETARIO p JOIN PROP_TELEFONO t ON t.documento = p.documento
 UNION
 SELECT nombre, telefono, 'agente' FROM AGENTE
-ORDER BY rol, nombre;
+ORDER BY rol, nombre, telefono;
 
 -- 21. Inmuebles en arriendo que no están también en venta.
 SELECT matricula FROM INMUEBLE WHERE en_arriendo = 1

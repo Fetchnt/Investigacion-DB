@@ -119,7 +119,7 @@ ORDER BY ciudad, marca;
 SELECT v.marca, v.modelo, ve.numero_factura
 FROM VEHICULO v
 LEFT JOIN VENTA ve ON ve.vin = v.vin
-ORDER BY ve.numero_factura IS NULL, ve.numero_factura;
+ORDER BY ve.numero_factura IS NULL, ve.numero_factura, v.vin;
 
 -- ---------------------------------------------------------------------
 -- C8 · Subconsultas

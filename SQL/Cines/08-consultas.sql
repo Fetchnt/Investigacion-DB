@@ -168,4 +168,4 @@ SELECT f.id_pelicula FROM FUNCION f JOIN SALA s ON s.id_sala = f.id_sala JOIN CI
 SELECT CONCAT('Cine ', id_cine) AS quien, telefono AS contacto FROM CINE_TELEFONO
 UNION
 SELECT apellidos, correo FROM CLIENTE
-ORDER BY quien;
+ORDER BY quien, contacto;

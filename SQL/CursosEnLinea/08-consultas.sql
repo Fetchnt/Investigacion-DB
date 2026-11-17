@@ -101,7 +101,7 @@ FROM INSCRIPCION x
 JOIN USUARIO e ON e.id_usuario = x.id_estudiante
 JOIN CURSO c ON c.codigo = x.codigo_curso
 JOIN USUARIO i ON i.id_usuario = c.id_instructor
-ORDER BY i.nombre, e.nombre;
+ORDER BY i.nombre, e.nombre, c.codigo;
 
 -- 13. Categorías con su número de cursos, incluso las vacías.
 SELECT g.nombre, COUNT(c.codigo) AS cursos
@@ -130,7 +130,7 @@ WHERE NOT EXISTS (SELECT 1 FROM INSCRIPCION x WHERE x.codigo_curso = c.codigo);
 SELECT x.id_estudiante, x.codigo_curso, x.progreso
 FROM INSCRIPCION x
 WHERE x.progreso > (SELECT AVG(y.progreso) FROM INSCRIPCION y WHERE y.codigo_curso = x.codigo_curso)
-ORDER BY x.codigo_curso;
+ORDER BY x.codigo_curso, x.id_estudiante;
 
 -- 17. Instructores que también estudian en la plataforma.
 SELECT nombre

@@ -385,7 +385,7 @@ Directorio telefónico: propietarios y agentes.
 SELECT p.nombre, t.telefono, 'propietario' AS rol FROM PROPIETARIO p JOIN PROP_TELEFONO t ON t.documento = p.documento
 UNION
 SELECT nombre, telefono, 'agente' FROM AGENTE
-ORDER BY rol, nombre;
+ORDER BY rol, nombre, telefono;
 ```
 
 | nombre | telefono | rol |

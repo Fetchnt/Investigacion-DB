@@ -408,7 +408,7 @@ Directorio de contactos: teléfonos de los cines y correos de los clientes.
 SELECT CONCAT('Cine ', id_cine) AS quien, telefono AS contacto FROM CINE_TELEFONO
 UNION
 SELECT apellidos, correo FROM CLIENTE
-ORDER BY quien;
+ORDER BY quien, contacto;
 ```
 
 | quien | contacto |

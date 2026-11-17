@@ -154,12 +154,12 @@ ORDER BY id_habitacion;
 |---|---|---|
 | 101 | estandar | doble |
 | 102 | estandar | sencilla |
-| 501 | suite | 48 m2 |
+| 501 | suite | 48.0 m2 |
 | 201 | estandar | queen |
 | 202 | estandar | doble |
 | 901 | suite | 75.5 m2 |
 | 1 | estandar | doble |
-| 2 | suite | 35 m2 |
+| 2 | suite | 35.0 m2 |
 
 ### Consulta 9
 

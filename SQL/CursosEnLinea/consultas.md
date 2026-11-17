@@ -233,7 +233,7 @@ FROM INSCRIPCION x
 JOIN USUARIO e ON e.id_usuario = x.id_estudiante
 JOIN CURSO c ON c.codigo = x.codigo_curso
 JOIN USUARIO i ON i.id_usuario = c.id_instructor
-ORDER BY i.nombre, e.nombre;
+ORDER BY i.nombre, e.nombre, c.codigo;
 ```
 
 | estudiante | titulo | instructor |
@@ -313,13 +313,13 @@ Estudiantes que van más adelantados que el promedio de su curso (correlacionada
 SELECT x.id_estudiante, x.codigo_curso, x.progreso
 FROM INSCRIPCION x
 WHERE x.progreso > (SELECT AVG(y.progreso) FROM INSCRIPCION y WHERE y.codigo_curso = x.codigo_curso)
-ORDER BY x.codigo_curso;
+ORDER BY x.codigo_curso, x.id_estudiante;
 ```
 
 | id_estudiante | codigo_curso | progreso |
 |---|---|---|
-| 3 | PY-101 | 100 |
 | 2 | PY-101 | 100 |
+| 3 | PY-101 | 100 |
 | 4 | UX-101 | 100 |
 
 ### Consulta 17

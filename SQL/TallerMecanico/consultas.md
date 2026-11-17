@@ -106,11 +106,11 @@ ORDER BY antiguedad DESC;
 
 | nombres | apellidos | antiguedad | salario_dia |
 |---|---|---|---|
-| Jairo | Mendoza Cruz | 14 | 126666.00 |
-| Wilson | Ariza Pena | 8 | 86666.00 |
-| Luis | Fajardo Gil | 6 | 80000.00 |
-| Brayan | Caicedo Rojas | 3 | 63333.00 |
-| Kevin | Ortiz Pardo | 1 | 58333.00 |
+| Jairo | Mendoza Cruz | 14 | 126667 |
+| Wilson | Ariza Pena | 8 | 86667 |
+| Luis | Fajardo Gil | 6 | 80000 |
+| Brayan | Caicedo Rojas | 3 | 63333 |
+| Kevin | Ortiz Pardo | 1 | 58333 |
 
 ### Consulta 7
 
