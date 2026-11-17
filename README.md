@@ -26,24 +26,6 @@ La revisión de 4FN de los diez esquemas está en [Normalizacion/README.md](Norm
 
 [VesperaRoom](https://github.com/Fetchnt/vesperaroom)
 
-## Cómo ejecutar los scripts
-
-Requiere MySQL 8.0.31 o superior (por `INTERSECT` y `EXCEPT`). Desde la carpeta `SQL/<ejercicio>`:
-
-```sh
-mysql -u root -p < 01-creacionobjetos.sql
-mysql -u root -p < 02-insercionregistros.sql
-mysql -u root -p < 03-usuariospermisos.sql
-mysql -u root -p < 04-restriccionesadicionales.sql
-mysql -u root -p < 05-vistas.sql            # opcional
-mysql -u root -p < 06-verificacion.sql
-mysql -u root -p --force < 07-pruebasrestricciones.sql   # opcional: todo debe fallar
-mysql -u root -p < 08-consultas.sql
-```
-
-`00-eliminarobjetos.sql` borra todo para reinstalar. El `README.txt` de cada carpeta dice qué resultado esperar de cada script,
-y `consultas.md` muestra el resultado de cada consulta.
-
 ## Estructura
 
 ```
